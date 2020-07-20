@@ -1,0 +1,61 @@
+.padre
+{
+    /* convierte al contenedor padre en un contenedor flexible */
+    display: flex;
+    /* después, hago que todo se pueda ver de izquierda a derecha pero ordenado */
+    flex-direction: row;
+    /* ahora hago que se respeten los anchos de los elementos hijos. Si no caben se pasarán a filas de abajo */
+    flex-wrap: wrap;
+    /* ahora le digo que los elementos también se deben wrappear */
+    text-align: center;
+    padding:10px;
+
+}
+.hijo
+{
+    /* aquí hago que ocupe el 100% del ANCHO */
+    flex-grow: 1;
+    /* ahora le decimos que queremos que nuestro contenedor hijo tiene un tamaño inicial de 100% */
+    /* porque queremos que el elemento hijo ocupe el 100% del ancho */
+    flex-basis: 100%;
+    padding: 10px;
+}
+.header
+{
+    background-color: #0ea5c6;
+}
+.articulo
+{
+    background-color: #ffc60b;
+
+}
+.izquierda
+{
+    background-color: #c70039;
+}
+.derecha
+{
+    background-color: antiquewhite;
+}
+.footer
+{
+    background-color: #a7d7c5;
+}
+
+/* ahora le digo que cuando tenga 600 pixeles o más, tome los siguientes atributos */
+@media all and (min-width: 600px){
+    .aside{flex: 1 1 auto;}
+    /* aquí le digo con el 1 1 auto que quiero que ocupe todo el ancho (si dos elementos tienen el 1 1 entonces comparten el 100% del ancho) */
+}
+@media all and (min-width: 800px)
+{
+    .articulo{flex: 8 0;}
+    /* creo que es porque tengo el grow 1 en la clase de hijo */
+    .izquierda{order:1;}
+    .articulo{order:2;}
+    .derecha{order:4;}
+    .footer{order:5;}
+
+}
+
+/* El flex grow es cuánto crece el item en relación al resto de los items adentro del mismo contenedor */

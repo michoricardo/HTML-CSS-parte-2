@@ -1,0 +1,25 @@
+h1
+    {
+    color: purple;
+    font-size:112px;
+}
+
+#toco
+{
+    color:red;
+    font-size:10px;  
+}
+
+.verde
+{
+    color: green;
+    font-size: 80px;
+
+}
+.fondo
+{
+    background: yellow;
+}
+
+/* aquí las 3 formas de poner un estilo a una parte de la página web */
+/* directo desde el h1, con id (hashtag) o con class (.nombre de la clase) */

@@ -1,0 +1,60 @@
+.contenedor
+{
+    width:90%;
+    height: 600px;
+    background: #FF5C29;
+    margin:50px auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+    /* el row reverse es para ponerlo tipo en espejo */
+    /* justify-content: flex-start; para ponerlo al inicio del flex  */
+    /* justify-content: flex-start; para ponerlo hasta lo último del flex, es como en word */
+    /* justify-content: center; */
+    /* es para centrarlo como en word */
+    /* justify-content: space-between; */
+    /* pone espacios entre los elementos 1-2 , 2-3  */
+     /* justify-content: space-around; */
+     /* pone el mismo espacio entre todos hasta llegar al 80% del width que queremos */
+
+     /* El justify content era para mover los elementos de izquierda a derecha. Ahora vamos a ver las propiedades para mover los elementos de arriba  a abajo de la pantalla */
+     /* align-items: flex-start; */
+     /* align-items: flex end; */
+
+     /* los primeros dos son para poner verticalmente arriba y hasta abajo, el otro es para ponerlos en el centro */
+     /* align-items: center; */
+     /* align-items: stretch;  */
+     /* Lo podríamos usar si quitaramos el height, para que el elemento hijo ocupe el total del elemento padre */
+     /* align-items: baseline; */
+     /* alinea el elemento tanto en el eje x como en el y por igual */
+    align-content: space-around;
+    /* aplica igual que el justify content space around, pero ahora en el otro eje */
+}
+.hijo
+{
+    background: #00B285;
+    width: 200px;
+    height:100px;
+    /* comentó en el ejercicio el height para que pueda ser dinámico */
+    /* para que funcione el stretch tendría que quitar el height */
+    color:#FFF;
+    margin: 30px;
+    padding:20px;
+    font-size:40px;
+    text-align: center;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* restringe el ancho (width) del contenedor hijo */
+    flex:1 1 auto;
+    /* aquí le estoy diciendo que tanto el flex grow como el flex shrink crecen ocupando el 100% del contenedor padre, automáticamente en el modo responsivo */
+    order:3;
+}
+.order1
+{
+    order:1;
+}
+.order2
+{
+    order:2;
+}

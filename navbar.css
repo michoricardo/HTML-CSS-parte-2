@@ -1,0 +1,80 @@
+
+.nav-enlace
+/* Es la clase de cada enlace de los navs, no del nav en sí */
+{
+
+    background: salmon;
+    color:black;
+    padding: 20px 10px;
+    /* le puse un padding osea margen interno de 20 px arribay abajo y 10 px a la derecha e izquierda   */
+    text-decoration: none;
+    /* Esto es para quitar las líneas del enlace por default */
+    display: inline-block;
+}
+.nav-boton
+{
+    background:salmon;
+    color: black;
+    padding: 10px;
+    border: 2px solid blue;
+    /* display: none; */ 
+    /* el display none es por si quiero que el botón desaparezca */
+}
+
+.nav-enlace:hover
+/* Este es lo que pasa cuando posicionas el mouse encima de cada enlace del nav */
+{
+
+    background: azure;
+    color:black;
+    padding: 20px 10px;
+    /* le puse un padding osea margen interno de 20 px arribay abajo y 10 px a la derecha e izquierda   */
+    text-decoration: none;
+    /* Esto es para quitar las líneas del enlace por default */
+}
+
+nav
+{
+    background: green;
+    padding: 20px 10px;
+    display:flex;
+    /* justify-content: flex-end; para poner todo hasta la derecha  */
+    /* justify-content: flex-start; para poner todo hasta la izquierda  */
+    /* justify-content: space-between;
+      para que se reparta entre todo el ancho de la pantalla */
+      justify-content: space-around;
+      /* es para que esté repartido pero que haya márgenes entre ellos, osea que no empiecen desde la mera orilla  */
+
+}
+
+
+@media(max-width:600px)
+/* media query */
+/* Este agarra los estilos generales del css pero modifica y agarra los nuevos estilos mientras se cumpla la condición, en este caso, la condición para agregar nuevos estilos es que la pantalla mida entre 0 y 600 pixeles */
+{
+    nav{
+        background: black;
+        /* cambia el color a los 600 */
+        flex-direction: column;
+        /* cambia de horizontal a vertical el flexbox a los 600px */
+        }
+    .nav-enlace
+    {
+        margin: 10px 0px;
+    }
+    .nav-boton
+{
+    background:salmon;
+    color: black;
+    padding: 10px;
+    border: 2px solid blue;
+    display: inline-block;
+    /* no sé por qué puso el inline block si así es como lo pone por default en pantallas chicas */
+    /* display: none; */ 
+    /* el display none es por si quiero que el botón desaparezca */
+}
+.desaparece
+{
+    display: none;
+}
+} 

@@ -1,0 +1,90 @@
+
+.container
+{
+    margin: auto;
+    /* esta cosa lo que hace es que calcula el margen automático según el ancho que le des a lo que estás poniendo */
+    width: 90%
+    /* el ancho se lo puedo dar de cualquier manera, pero se lo tengo que dar a huevo para que haga el cálculo de auto */
+    
+    
+}
+.columna
+{
+    background-color:#fff0bc;
+    color: #f7931e;
+    border: 1px solid#f05a28;
+    margin: 0 auto;
+    /* puse cero para que no haya margen arriba y abajo y auto ajustable hacia los lados */
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 7px black; 
+    /* le puse 10 px a la derecha, 10 px abajo (porque solo se puede sombrear de dos de los 4 lados y el 7 px es la difuminación) */
+    width: 23%;
+    box-sizing: border box;
+}
+.precio
+{
+        font-weight: 700;
+        /* modifiqué las negritas del precio nadamas, el font weight normal era de 400. */
+        font-size: 500 px;
+        color: #f05a28;
+        
+
+}
+.btn-precio
+{
+    background-color: salmon;
+    /* Color de fondo del botón (ancla) */
+    display: block;
+    /* para que ocupe todo el ancho del contenedor */
+    padding: auto;
+    /* puse padding osea margen interno, automatico, así como el margen */
+    margin: auto;
+    border-radius: 10px; 
+    /* puse borde redondeado porque lo de afuera también lo tenía */
+    text-align: center;
+    /* este no sé si estaba de más */
+    color: #fff;
+    /* color de la letra */
+    text-decoration: none;
+    
+}
+.btn-precio:hover
+{
+    background-color: rgb(8, 7, 7);
+    color: rgb(18, 248, 10);
+}
+body
+{
+    /* aquí pongo todo lo que quiero que afecte al body... como es mucho lo que involucra al body, puse la fuente principal aquí */
+    font-family: 'Coiny', cursive;
+    /* font-weight: 800; */
+    /* el font weight es lo ancho que se ve el texto, es como controlar las negritas */
+}
+.flex
+{
+    display: flex;
+    /* para que el contenedor principal se vea como flex */
+    flex-wrap: wrap;
+    /* para que el flex wrap se active, osea que mientras se haga pequeño y si se hace grande el flex también */
+}
+.text-center
+{
+    text-align: center; 
+}
+@media (max-width: 730px)
+{
+    .columna
+    {
+        width:45%;
+        margin-top: 7px;
+    }
+}
+@media (max-width: 500px)
+{
+    .columna
+    {
+        width:100%;
+        margin-top: 7px;
+    }
+}

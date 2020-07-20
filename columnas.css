@@ -1,0 +1,22 @@
+nav
+{
+    background-color: #ff6bd6;
+    padding: 20px;
+    margin: 40px;
+}
+.columna
+{
+    background: #1b335f;
+    padding: 20 px;
+    color: #ffb0fe;
+    margin: 20px;
+    width: 25% 
+    /* es el ancho de las columnas, se puede poner en porcentaje total de la página */
+
+
+}
+.padre
+{
+    display: flex;
+    
+}

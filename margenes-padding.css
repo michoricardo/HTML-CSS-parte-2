@@ -1,0 +1,16 @@
+h1{
+    background-color: #36622b ;
+    /* margin:50px; Esto es en caso de que le quiera poner márgenes iguales a todo */
+    /* margin-left:50 px; Esto es en caso de que le quiera poner márgen izquierdo 
+    ¿ */
+    /* margin-bottom:50 px; Esto es en caso de que le quiera poner márgen de abajo nadamas */
+    /* margin:200px 10px 50px 40px; Esto es en caso de que le quiera poner márgenes a todo, pero de diferente tamaño, la convención, sería como la de las manecillas del reloj (top,derecha,abajo,izquierda) */
+    margin:50px;
+}
+
+.parrafin
+{
+    background-color:blue;
+    /* margin:100px; */
+    padding: 10px 50px 100px 10px;
+}

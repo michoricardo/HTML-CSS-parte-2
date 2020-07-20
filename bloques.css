@@ -1,0 +1,14 @@
+h1
+{
+    background-color: brown;
+    display: inline-block;
+    /* esto es para que en vez de que me los despliegue horizontal y ocupen todo */
+    /* me los ponga vertical */
+}
+a
+{
+    background-color: aqua;
+    display: block;
+    /* en este caso las anclas (osea las a), se ponen en horizontal naturalmente */
+    /* pero yo las quiero poner en vertical también, entonces les pongo display block */
+}
